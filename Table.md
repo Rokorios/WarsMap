@@ -2,10 +2,6 @@
 layout: default
 ---
 
-<object type="image/svg+xml" data="Map.svg">
-  Your browser does not support SVG
-</object>
-
 <table>
 <colgroup>
 <col width="30%" />
