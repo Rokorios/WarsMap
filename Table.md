@@ -15,6 +15,7 @@ layout: default
 </thead>
 <tbody>
 
+{% assign items_grouped = site.data.ConanManifest | group_by: 'Owner' %}
 {% for Clan in items_grouped %}
 
 	<tr>
