@@ -17,8 +17,6 @@
    viewBox="0 0 3000 3000"
    sodipodi:docname="Composite2.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
-  <defs
-     id="defs81" />
   <metadata
      id="metadata16">
     <rdf:RDF>
@@ -31,6 +29,37 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <defs
+     id="defs81">
+	 <marker
+       inkscape:stockid="SquareL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker4922"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4920"
+         d="M -5.0,-5.0 L -5.0,5.0 L 5.0,5.0 L 5.0,-5.0 L -5.0,-5.0 z "
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:0.58823529"
+         transform="scale(0.8)" />
+    </marker>
+	<marker
+       inkscape:stockid="DotL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker5131"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5129"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:0.58823529"
+         transform="scale(0.8) translate(7.4, 1)" />
+    </marker>
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
