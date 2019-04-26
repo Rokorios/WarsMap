@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<table>
+<table style="background-color: #dbdbdb" width = "25%">
 <colgroup>
-<col width="30%" />
-<col width="70%" />
+<col width="50%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -16,7 +16,8 @@ layout: default
 <tbody>
 
 {% assign items_grouped = site.data.ConanManifest | group_by: 'Owner' %}
-{% for Clan in items_grouped %}
+{% assign items_sorted = items_grouped | sort: 'name' %} 
+{% for Clan in items_sorted %}
 
 	<tr>
 	<td style="color:{{Clan.items[0].Color}}">{{ Clan.name }}</td>
