@@ -3,13 +3,13 @@ layout: Map
 title: Map
 ---
 {% for polygon in site.data.ConanManifest %}
-{% if polygon.Capital == 1 %}
+{% if polygon.Capital == "1" %}
 <path
    style="display:inline;fill:{{ polygon.Color }};fill-opacity:0.57070707;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:4, 2;marker-start:url(#marker4922);marker-mid:url(#marker4922);marker-end:url(#marker4922);stroke-dashoffset:0"
    d="{{ polygon.Geometry }}"
    id="{{ polygon.Territory }}"  
 />
-{% elsif polygon.Stronghold == 1 %}
+{% elsif polygon.Stronghold == "1" %}
 <path
    style="display:inline;fill:{{ polygon.Color }};fill-opacity:0.57070707;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:4, 2;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker5131);marker-mid:url(#marker5131);marker-end:url(#marker5131)"
    d="{{ polygon.Geometry }}"
@@ -24,5 +24,3 @@ title: Map
 />
 {% endif %}
 {% endfor %}
-
-
