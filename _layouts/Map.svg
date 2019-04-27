@@ -46,13 +46,29 @@
          width="1"
          y="0"
          x="0"
-         style="fill:black;stroke:none" />
+         style="fill:#000000;stroke:none" />
       <rect
          id="rect1659"
          height="1"
          width="1"
          y="1"
          x="1"
+         style="fill:#000000;stroke:none" />
+    </pattern>
+	<pattern
+       inkscape:stockid="Stripes 1:2"
+       id="Strips1_2"
+       patternTransform="translate(0,0) scale(10,10)"
+       height="1"
+       width="3"
+       patternUnits="userSpaceOnUse"
+       inkscape:collect="always">
+      <rect
+         id="rect1594"
+         height="2"
+         width="1"
+         y="-0.5"
+         x="0"
          style="fill:black;stroke:none" />
     </pattern>
     <marker
