@@ -5,13 +5,13 @@ title: Map
 {% for polygon in site.data.ConanManifest %}
 {% if polygon.Capital == "1" %}
 <path
-   style="display:inline;fill:{{ polygon.Color }};fill-opacity:0.65;stroke:#FFFFFF;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:4, 2;marker-start:url(#marker4922);marker-mid:url(#marker4922);marker-end:url(#marker4922);stroke-dashoffset:0"
+   style="display:inline;fill:{{ polygon.Color }};fill-opacity:0.65;stroke:#ffd105;stroke-width:11;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:0.85;"
    d="{{ polygon.Geometry }}"
    id="{{ polygon.Territory }}"  
 />
 {% elsif polygon.Stronghold == "1" %}
 <path
-   style="display:inline;fill:{{ polygon.Color }};fill-opacity:0.65;stroke:#FFFFFF;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:4, 2;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker5131);marker-mid:url(#marker5131);marker-end:url(#marker5131)"
+   style="display:inline;fill:{{ polygon.Color }};fill-opacity:0.65;stroke:#d0ff84;stroke-width:11;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:0.85;"
    d="{{ polygon.Geometry }}"
    id="{{ polygon.Territory }}" 
 />
