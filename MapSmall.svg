@@ -1,0 +1,35 @@
+---
+layout: MapSmall
+title: MapSmall
+---
+{% for polygon in site.data.ConanManifest %}
+{% if polygon.Capital == "1" %}
+<path
+   style="display:inline;fill:{{ polygon.Color }};fill-opacity:0.65;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:0.65;"
+   d="{{ polygon.Geometry }}"
+   id="{{ polygon.Territory }}"  
+/>
+<path
+   style="display:inline;fill:url(#Checkerboard);fill-opacity:0.65;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.65"
+   d="{{ polygon.Geometry }}"
+   id="{{ polygon.Territory }}2"  
+/>
+{% elsif polygon.Stronghold == "1" %}
+<path
+   style="display:inline;fill:{{ polygon.Color }};fill-opacity:0.65;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:0.65;"
+   d="{{ polygon.Geometry }}"
+   id="{{ polygon.Territory }}" 
+/>
+<path
+   style="display:inline;fill:url(#Polkadots-med);fill-opacity:0.65;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.65"
+   d="{{ polygon.Geometry }}"
+   id="{{ polygon.Territory }}2"  
+/>
+{% else %}
+<path
+   style="display:inline;fill:{{ polygon.Color }};fill-opacity:0.65;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+   d="{{ polygon.Geometry }}"
+   id="{{ polygon.Territory }}"    
+/>
+{% endif %}
+{% endfor %}
