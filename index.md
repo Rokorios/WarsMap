@@ -1,12 +1,23 @@
 ---
 layout: default
 ---
+<style>
+@font-face {
+    font-family: 'Crom';
+    src: url('crom_v1-webfont.woff2') format('woff2'),
+         url('crom_v1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+</style>
+
 
 <object type="image/svg+xml" data="Map.svg">
   Your browser does not support SVG
 </object>
 
-<table style="background-color: #dbdbdb; position: absolute; top: 400px; left: 1750px; font-size: 30; font-weight: bold;" width = "1000px">
+<table style="font-family:Crom; position: absolute; top: 520px; left: 2000px; font-size: 30; font-weight: bold;" width = "700px">
 <colgroup>
 <col width="50%" />
 <col width="50%" />
